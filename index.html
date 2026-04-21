@@ -1075,16 +1075,16 @@ footer {
   transform: scale(1.1);
 }
 
-/* LIGHT MODE - FULL UI */
+/* LIGHT MODE - FULL UI (improved contrast) */
 body[data-theme="light"] {
   background: #f8f6f1 !important;
-  color: #1e2421 !important;
+  color: #1a1a1a !important;
 }
 body[data-theme="light"] .book-app,
 body[data-theme="light"] .app-container,
 body[data-theme="light"] .creator-wrap {
   background: #f8f6f1 !important;
-  color: #1e2421 !important;
+  color: #1a1a1a !important;
 }
 body[data-theme="light"] .book-header,
 body[data-theme="light"] .book-title,
@@ -1093,27 +1093,27 @@ body[data-theme="light"] .section,
 body[data-theme="light"] .card,
 body[data-theme="light"] .panel {
   background: #ffffff !important;
-  border-color: #d9e0d4 !important;
-  color: #1e2421 !important;
+  border-color: #d0d5cc !important;
+  color: #1a1a1a !important;
 }
 body[data-theme="light"] h1,
 body[data-theme="light"] h2,
 body[data-theme="light"] h3,
 body[data-theme="light"] .book-header h1 {
   color: #1e7a2f !important;
-  text-shadow: 0 0 22px rgba(30,122,47,.18) !important;
+  text-shadow: 0 0 22px rgba(30,122,47,.12) !important;
 }
 body[data-theme="light"] p,
 body[data-theme="light"] .tagline,
 body[data-theme="light"] .description {
-  color: #54615a !important;
+  color: #2c2c2c !important;
 }
 body[data-theme="light"] input,
 body[data-theme="light"] textarea,
 body[data-theme="light"] select {
   background: #f4f2eb !important;
-  border-color: #d9e0d4 !important;
-  color: #1e2421 !important;
+  border-color: #d0d5cc !important;
+  color: #1a1a1a !important;
 }
 body[data-theme="light"] input:focus,
 body[data-theme="light"] textarea:focus,
@@ -1143,20 +1143,64 @@ body[data-theme="light"] .theme-toggle-btn:hover {
 }
 body[data-theme="light"] .tab-btn {
   border-color: #e2e7df !important;
-  color: #7f8a82 !important;
+  color: #4a4a4a !important;
 }
 body[data-theme="light"] .tab-btn.active {
   background: rgba(30,122,47,.09) !important;
   border-bottom-color: #1e7a2f !important;
   color: #1e7a2f !important;
 }
+/* Word cards and flashcards – light background, dark text */
 body[data-theme="light"] .word-card,
 body[data-theme="light"] .flashcard,
-body[data-theme="light"] .flip-card {
+body[data-theme="light"] .flip-card,
+body[data-theme="light"] .flashcard-inner,
+body[data-theme="light"] .word-card-top,
+body[data-theme="light"] .definition-block,
+body[data-theme="light"] .sentence-tab-row,
+body[data-theme="light"] .sentence-content,
+body[data-theme="light"] .my-sentences-block {
   background: #ffffff !important;
-  border-color: #d9e0d4 !important;
-  color: #1e2421 !important;
-  box-shadow: 0 4px 12px rgba(30,36,33,.08) !important;
+  border-color: #d0d5cc !important;
+  color: #1a1a1a !important;
+}
+body[data-theme="light"] .word-display {
+  color: #0d0d0d !important;
+  text-shadow: none !important;
+}
+body[data-theme="light"] .pron-text,
+body[data-theme="light"] .pron-row {
+  color: #3a3a3a !important;
+}
+body[data-theme="light"] .def-en {
+  color: #1a1a1a !important;
+}
+body[data-theme="light"] .def-zh {
+  color: #3a3a3a !important;
+}
+body[data-theme="light"] .sent-en {
+  color: #1a1a1a !important;
+}
+body[data-theme="light"] .sent-zh {
+  color: #3a3a3a !important;
+}
+body[data-theme="light"] .synan-block,
+body[data-theme="light"] .synan-group {
+  background: #faf9f5 !important;
+  border-color: #e2e7df !important;
+}
+body[data-theme="light"] .synan-chips {
+  background: transparent !important;
+}
+body[data-theme="light"] .synan-chip.syn {
+  background: rgba(30,122,47,.12) !important;
+  border-color: rgba(30,122,47,.4) !important;
+  color: #1e7a2f !important;
+}
+body[data-theme="light"] .synan-chip.ant {
+  background: rgba(200,40,40,.12) !important;
+  border-color: rgba(200,40,40,.4) !important;
+  color: #c02828 !important;
 }
 body[data-theme="light"] .alert,
 body[data-theme="light"] .alert-success {
@@ -1167,8 +1211,36 @@ body[data-theme="light"] .alert-success {
 body[data-theme="light"] code,
 body[data-theme="light"] pre {
   background: #f4f2eb !important;
-  border-color: #d9e0d4 !important;
-  color: #1e2421 !important;
+  border-color: #d0d5cc !important;
+  color: #1a1a1a !important;
+}
+/* Flashcard specific overrides */
+body[data-theme="light"] .flashcard-container .flashcard-inner {
+  background: linear-gradient(160deg, #ffffff, #f8f8f8) !important;
+  border: 1px solid #d0d5cc !important;
+  color: #1a1a1a !important;
+}
+body[data-theme="light"] .flashcard-container .flashcard-word-main {
+  color: #1e7a2f !important;
+}
+body[data-theme="light"] .flashcard-container .flashcard-pro {
+  color: #3a3a3a !important;
+}
+body[data-theme="light"] .flashcard-container .flashcard-pos {
+  background: rgba(30,122,47,.1) !important;
+  border-color: rgba(30,122,47,.3) !important;
+  color: #1e7a2f !important;
+}
+body[data-theme="light"] .flashcard-container .flashcard-def-en {
+  color: #1a1a1a !important;
+}
+body[data-theme="light"] .flashcard-container .flashcard-def-zh {
+  color: #3a3a3a !important;
+}
+body[data-theme="light"] .flashcard-container .flashcard-hear {
+  background: rgba(30,122,47,.15) !important;
+  border-color: rgba(30,122,47,.6) !important;
+  color: #1e7a2f !important;
 }
 </style>
 </head>
